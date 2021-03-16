@@ -1,0 +1,39 @@
+<mat-toolbar class="header" color="primary">
+	<button	mat-icon-button
+			(click)="sidebarOpen = !sidebarOpen"
+	>
+		<mat-icon>menu</mat-icon>
+	</button>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+	<mat-sidenav
+		mode="side"
+		[opened]="sidebarOpen"
+		class="sidenav"
+		fixedInViewport="true"
+		[fixedTopGap]="64"
+		[style.left]="0"
+	>
+		<ng-container *ngFor="let menuItem of sidebarTabs">
+			<a class="sidenav-item"
+			   [routerLink]="menuItem.url"
+			   routerLinkActive="active"
+			   *ngIf="menuItem.active"
+			   (click)="sidebarOpen = false"
+			>
+				<mat-icon>{{menuItem.icon}}</mat-icon>
+				<div>{{menuItem.name}}</div>
+			</a>
+			<mat-divider></mat-divider>
+		</ng-container>
+	</mat-sidenav>
+
+	<mat-sidenav-content>
+		<div class="container pt-3 pb-3">
+			<router-outlet></router-outlet>
+		</div>
+	</mat-sidenav-content>
+</mat-sidenav-container>
+
+<!--<app-global-loader></app-global-loader>-->

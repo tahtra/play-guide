@@ -24,7 +24,9 @@
 							"src/assets"
 						],
 						"styles": [
-							"src/styles/styles.scss"
+							"./node_modules/bootstrap/dist/css/bootstrap.min.css",
+							"src/styles/styles.scss",
+							"src/styles/material-theming.scss"
 						],
 						"scripts": []
 					},
