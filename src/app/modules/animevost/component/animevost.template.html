@@ -1,0 +1,20 @@
+<mat-form-field appearance="outline">
+	<mat-label>Start index</mat-label>
+	<input
+		matInput
+		[(ngModel)]="startValue"
+	>
+</mat-form-field>
+
+<button
+	mat-raised-button
+	color="primary"
+	(click)="stop=false"
+	(click)="redirectUrl()"
+>Animevost.org</button>
+
+<button
+	mat-mini-fab
+	color="accent"
+	(click)="stop=true"
+><mat-icon>pause</mat-icon></button>

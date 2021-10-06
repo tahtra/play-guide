@@ -7,6 +7,10 @@ export const appRoutes: Routes = [
 		loadChildren: () => import('./modules/games/games.module').then(m => m.GamesModule)
 	},
 	{
+		path: 'animevost',
+		loadChildren: () => import('./modules/animevost/animevost.module').then(m => m.AnimevostModule)
+	},
+	{
 		path: '**',
 		redirectTo: ''
 	},
