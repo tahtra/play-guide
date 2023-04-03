@@ -1,27 +1,21 @@
+import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RouterModule} from '@angular/router';
 
-import {AppComponent} from './component/app.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
-import {AngularMaterialModule} from "./modules/angular.material.module";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {CommonModule} from "@angular/common";
-import {AppRoutes} from "./app.route";
+import {AppComponent} from 'src/app/app.component';
+import {appRoutes} from 'src/app/routes/app.route';
 
 @NgModule({
 	declarations: [
 		AppComponent
 	],
 	imports: [
-		AngularMaterialModule,
+		CommonModule,
 		BrowserModule,
 		BrowserAnimationsModule,
-		CommonModule,
-		FormsModule,
-		HttpClientModule,
-		ReactiveFormsModule,
-		AppRoutes
+		RouterModule.forRoot(appRoutes, {useHash: true})
 	],
 	providers: [],
 	bootstrap: [AppComponent]

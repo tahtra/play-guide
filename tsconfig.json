@@ -1,23 +1,55 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+	"files": [
+		"src/main.ts",
+		"src/polyfills.ts"
+	],
+	"include": [
+		"src/**/*.d.ts"
+	],
 	"compileOnSave": false,
 	"compilerOptions": {
 		"baseUrl": "./",
 		"outDir": "./dist/out-tsc",
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
 		"sourceMap": true,
 		"declaration": false,
 		"downlevelIteration": true,
-		"module": "esnext",
-		"moduleResolution": "node",
 		"experimentalDecorators": true,
+		"moduleResolution": "node",
 		"importHelpers": true,
-		"target": "es2015",
-		"lib": [
-			"es2018",
-			"dom"
-		]
+		"target": "es2017",
+		"types": [],
+		"module": "es2020",
+		"paths": {
+			"@pages": ["src/app/pages/"],
+			"@pages/*": ["src/app/pages/*"],
+			"@games/*": ["src/app/pages/games/*"],
+			"@ui": ["src/common/ui/"],
+			"@directives": ["src/common/directives/"],
+			"@enums": ["src/common/enums/"],
+			"@interfaces": ["src/common/interfaces/"],
+			"@models": ["src/common/models/"],
+			"@routes": ["src/app/routes/"],
+			"@resolves": ["src/common/resolves/"],
+			"@services": ["src/common/services/"],
+			"@tabs": ["src/common/lists/"],
+			"@widgets": ["src/common/widgets/"],
+			"environment": ["src/app/environments/environment"]
+		}
 	},
+	"lib": [
+		"es2020", "dom"
+	],
 	"angularCompilerOptions": {
-		"enableI18nLegacyMessageIdFormat": false
+		"enableI18nLegacyMessageIdFormat": false,
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true,
+		"strictTemplates": true
 	}
 }
