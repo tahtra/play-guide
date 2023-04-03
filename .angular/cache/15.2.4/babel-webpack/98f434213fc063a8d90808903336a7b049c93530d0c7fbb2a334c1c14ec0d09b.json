@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const MENU_ITEMS = [{\n  name: 'Games',\n  url: '/games/',\n  icon: 'videogame_asset',\n  active: true\n}, {\n  name: 'Рецепты',\n  url: '/recepts/',\n  icon: 'list',\n  active: true\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

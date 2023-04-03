@@ -16,15 +16,14 @@
 						"outputPath": "dist",
 						"index": "src/index.html",
 						"main": "src/main.ts",
-						"polyfills": "src/polyfills.ts",
 						"tsConfig": "tsconfig.json",
 						"aot": true,
 						"assets": [
 							"src/assets"
 						],
 						"styles": [
-							"src/common/styles/styles.scss",
-							"src/common/styles/material-theming.scss"
+							"src/styles/styles.scss",
+							"src/styles/material-theming.scss"
 						],
 						"scripts": []
 					},
@@ -48,8 +47,7 @@
 									"type": "initial",
 									"maximumWarning": "2mb",
 									"maximumError": "5mb"
-								},
-								{
+								}, {
 									"type": "anyComponentStyle",
 									"maximumWarning": "6kb",
 									"maximumError": "10kb"

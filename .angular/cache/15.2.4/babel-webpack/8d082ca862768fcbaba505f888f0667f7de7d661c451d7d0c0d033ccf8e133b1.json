@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { GAMES_LIST } from './games.list';\nexport { MENU_ITEMS } from './sidebar.tabs';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

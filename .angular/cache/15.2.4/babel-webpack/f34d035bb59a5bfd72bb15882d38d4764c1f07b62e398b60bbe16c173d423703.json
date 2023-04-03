@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { GamesComponent } from '@pages/games/games.component';\nexport const gamesRoute = [{\n  path: '',\n  component: GamesComponent\n}, {\n  path: './path-of-exile',\n  loadChildren: () => import('@pages').then(m => m.PathOfExilePage)\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

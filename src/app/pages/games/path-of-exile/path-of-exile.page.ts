@@ -12,7 +12,7 @@ import {PathOfExileComponent} from 'src/app/pages/games/path-of-exile/path-of-ex
 		CommonModule,
 		RouterModule.forChild(pathOfExileRoute)
 	],
-	providers: [],
+	providers: []
 })
 export class PathOfExilePage {
 }

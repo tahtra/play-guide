@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { MainComponent } from '@pages/main/main.component';\nexport const mainRoute = [{\n  path: '',\n  component: MainComponent\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -6,6 +6,26 @@
 	<base href="./">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="src/assets/favicon.ico">
+	<style>
+		dntr-root:empty {
+			background-color: #262626;
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			right: 0;
+			top: 0;
+			z-index: 100;
+		}
+
+		dntr-root:empty:before {
+			content: 'App is Loading ...';
+			font-size: 26px;
+			position: absolute;
+			color: #ffffff;
+			bottom: 50%;
+			right: 50%;
+		}
+	</style>
 </head>
 <body>
 <play-root></play-root>

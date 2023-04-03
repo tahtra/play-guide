@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { appRoutes } from './app.route';\nexport { gamesRoute } from './games.route';\nexport { pathOfExileRoute } from './path-of-exile.route';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

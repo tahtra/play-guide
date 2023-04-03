@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const GAMES_LIST = [{\n  title: 'POE',\n  url: '/path-of-exile/',\n  background: '111',\n  active: true\n}, {\n  title: 'WOW',\n  url: '/world-of-warcraft/',\n  background: '222',\n  active: true\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
