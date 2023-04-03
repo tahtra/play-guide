@@ -8,7 +8,7 @@
 			"schematics": {},
 			"root": "",
 			"sourceRoot": "src",
-			"prefix": "app",
+			"prefix": "play",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
@@ -20,13 +20,11 @@
 						"tsConfig": "tsconfig.json",
 						"aot": true,
 						"assets": [
-							"src/favicon.ico",
 							"src/assets"
 						],
 						"styles": [
-							"./node_modules/bootstrap/dist/css/bootstrap.min.css",
-							"src/styles/styles.scss",
-							"src/styles/material-theming.scss"
+							"src/common/styles/styles.scss",
+							"src/common/styles/material-theming.scss"
 						],
 						"scripts": []
 					},
@@ -70,20 +68,9 @@
 							"browserTarget": "play:build:production"
 						}
 					}
-				},
-				"lint": {
-					"builder": "@angular-devkit/build-angular:tslint",
-					"options": {
-						"tsConfig": [
-							"tsconfig.json",
-						],
-						"exclude": [
-							"**/node_modules/**"
-						]
-					}
 				}
 			}
 		}
 	},
-	"defaultProject": "play-guide"
+	"defaultProject": "play"
 }
